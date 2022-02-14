@@ -17,4 +17,4 @@ jobs:
         with:
           node-version: 16
       - run: |
-        ./run_tests.sh
+          ./run_tests.sh
