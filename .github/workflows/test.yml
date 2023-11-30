@@ -2,10 +2,10 @@ name: Test
 
 on:
   push:
-    branches: [ master ]
   pull_request:
-    branches: [ master ]
-
+  workflow_dispatch:
+  schedule:
+    - cron: '15 3 1 * *'  # <https://crontab.guru/#45_16_*_*_0> 
 jobs:
   build:
     runs-on: ubuntu-latest
